@@ -99,7 +99,7 @@ class CityListTest {
         CityList cityList = mockCityList();
         City city = new City("Victoria", "British Columbia");
         cityList.add(city);
-
-        assertEquals(1, cityList.countCities());
+        cityList.changeCityName();
+        assertEquals("Victoria", cityList.getCities().get(0).getCityName());
     }
 }
