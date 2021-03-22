@@ -78,5 +78,9 @@ public class CityList {
         return cities.size();
     }
 
+    public void changeCityName() {
+        City city = cities.get(0);
+        city.setCity("Victoria");
 
+    }
 }
